@@ -1,0 +1,126 @@
+@font-face {
+  font-family: Vegur;
+  src: url('../fonts/Vegur-Regular.otf');
+}
+
+
+/* Variables */
+
+:root {
+  --bg-color: rgb(0, 0, 0);
+  --odd-row: rgb(18, 18, 18);
+  --even-row: rgb(26, 26, 26);
+  --row-count: 13;
+  --column-count: 3;
+}
+
+body {
+  font-size: 2.8vw;
+  font-family: Vegur, arial, sans-serif;
+  font-weight: 400;
+  background-color: var(--bg-color);
+  color: white;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+main {
+  display: grid;
+  grid-template-columns: repeat(var(--column-count), 1fr);
+  grid-template-rows: repeat(var(--row-count), 1fr);
+  grid-auto-flow: column;
+}
+
+center {
+  display: none;
+}
+
+#statusContainer {
+  grid-row: -1;
+  background-color: var(--bg-color);
+}
+
+.row {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 1em;
+}
+
+.row:nth-child(odd) {
+  background-color: var(--odd-row);
+}
+
+.row:nth-child(even) {
+  background-color: var(--even-row);
+}
+
+.enclosure {
+  text-align: right;
+}
+
+/* Status Colors */
+
+.undef {
+  color: rgb(255, 255, 255);
+}
+
+.noacs {
+  color: rgb(237, 29, 4);
+}
+
+.open {
+  color: rgb(0, 255, 255);
+}
+
+.super {
+  color: rgb(0, 255, 0);
+}
+
+.cntrl {
+  color: rgb(255, 255, 0);
+}
+
+header {
+  text-align: center;
+}
+
+header * {
+  margin: 0;
+}
+
+.simple {
+  font-size: .8em;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: none;
+  grid-auto-flow: row;
+}
+
+.simple>#statusContainer {
+  grid-row: auto;
+}
+
+.updater {
+  font-size: 24px;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: none;
+  grid-auto-flow: row;
+  grid-gap: .3em;
+}
+
+.updater>#statusContainer {
+  grid-row: auto;
+}
+
+.updater>.row>select {
+  justify-self: start;
+}
+
+.updater>.row:nth-child(odd) {
+  background-color: var(--bg-color);
+}
+
+.updater>.row:nth-child(even) {
+  background-color: var(--bg-color);
+}

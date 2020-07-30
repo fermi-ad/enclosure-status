@@ -1,0 +1,849 @@
+{
+  "getCurrentEntries": [{
+      "id": 26512,
+      "status": {
+        "id": 5,
+        "name": "No Access",
+        "isActive": true
+      },
+      "enclosure": {
+        "id": 1,
+        "name": "Linac",
+        "isActive": true
+      },
+      "modifiedDate": "Nov 8, 2017 3:35:43 PM"
+    },
+    {
+      "id": 26160,
+      "status": {
+        "id": 7,
+        "name": "Restricted",
+        "isActive": true
+      },
+      "enclosure": {
+        "id": 2,
+        "name": "MTA",
+        "isActive": true
+      },
+      "modifiedDate": "Jul 27, 2017 10:35:34 AM"
+    },
+    {
+      "id": 26728,
+      "status": {
+        "id": 5,
+        "name": "No Access",
+        "isActive": true
+      },
+      "enclosure": {
+        "id": 3,
+        "name": "Booster",
+        "isActive": true
+      },
+      "modifiedDate": "Dec 3, 2017 3:49:21 AM"
+    },
+    {
+      "id": 26791,
+      "status": {
+        "id": 5,
+        "name": "No Access",
+        "isActive": true
+      },
+      "enclosure": {
+        "id": 4,
+        "name": "MI8",
+        "isActive": true
+      },
+      "modifiedDate": "Dec 6, 2017 10:59:36 AM"
+    },
+    {
+      "id": 26541,
+      "status": {
+        "id": 5,
+        "name": "No Access",
+        "isActive": true
+      },
+      "enclosure": {
+        "id": 5,
+        "name": "MI12A",
+        "isActive": true
+      },
+      "modifiedDate": "Nov 9, 2017 2:36:09 PM"
+    },
+    {
+      "id": 26542,
+      "status": {
+        "id": 5,
+        "name": "No Access",
+        "isActive": true
+      },
+      "enclosure": {
+        "id": 6,
+        "name": "MI12B",
+        "isActive": true
+      },
+      "modifiedDate": "Nov 9, 2017 2:36:09 PM"
+    },
+    {
+      "id": 26736,
+      "status": {
+        "id": 5,
+        "name": "No Access",
+        "isActive": true
+      },
+      "enclosure": {
+        "id": 7,
+        "name": "MI10",
+        "isActive": true
+      },
+      "modifiedDate": "Dec 4, 2017 4:45:00 AM"
+    },
+    {
+      "id": 26854,
+      "status": {
+        "id": 5,
+        "name": "No Access",
+        "isActive": true
+      },
+      "enclosure": {
+        "id": 8,
+        "name": "MI20-MI62",
+        "isActive": true
+      },
+      "modifiedDate": "Dec 8, 2017 3:21:08 PM"
+    },
+    {
+      "id": 26840,
+      "status": {
+        "id": 5,
+        "name": "No Access",
+        "isActive": true
+      },
+      "enclosure": {
+        "id": 9,
+        "name": "MI65",
+        "isActive": true
+      },
+      "modifiedDate": "Dec 8, 2017 11:04:51 AM"
+    },
+    {
+      "id": 26841,
+      "status": {
+        "id": 5,
+        "name": "No Access",
+        "isActive": true
+      },
+      "enclosure": {
+        "id": 10,
+        "name": "MINOS Alcoves",
+        "isActive": true
+      },
+      "modifiedDate": "Dec 8, 2017 11:04:51 AM"
+    },
+    {
+      "id": 26842,
+      "status": {
+        "id": 5,
+        "name": "No Access",
+        "isActive": true
+      },
+      "enclosure": {
+        "id": 11,
+        "name": "MINOS Absorber",
+        "isActive": true
+      },
+      "modifiedDate": "Dec 8, 2017 11:04:51 AM"
+    },
+    {
+      "id": 26855,
+      "status": {
+        "id": 5,
+        "name": "No Access",
+        "isActive": true
+      },
+      "enclosure": {
+        "id": 12,
+        "name": "F-Sector",
+        "isActive": true
+      },
+      "modifiedDate": "Dec 8, 2017 3:21:08 PM"
+    },
+    {
+      "id": 26705,
+      "status": {
+        "id": 5,
+        "name": "No Access",
+        "isActive": true
+      },
+      "enclosure": {
+        "id": 13,
+        "name": "Pre-Target",
+        "isActive": true
+      },
+      "modifiedDate": "Nov 29, 2017 8:49:11 PM"
+    },
+    {
+      "id": 26706,
+      "status": {
+        "id": 5,
+        "name": "No Access",
+        "isActive": true
+      },
+      "enclosure": {
+        "id": 14,
+        "name": "Pre-Vault",
+        "isActive": true
+      },
+      "modifiedDate": "Nov 29, 2017 8:49:11 PM"
+    },
+    {
+      "id": 26861,
+      "status": {
+        "id": 5,
+        "name": "No Access",
+        "isActive": true
+      },
+      "enclosure": {
+        "id": 15,
+        "name": "Transport US/DS",
+        "isActive": true
+      },
+      "modifiedDate": "Dec 11, 2017 3:08:54 PM"
+    },
+    {
+      "id": 26708,
+      "status": {
+        "id": 5,
+        "name": "No Access",
+        "isActive": true
+      },
+      "enclosure": {
+        "id": 16,
+        "name": "Transport Mid",
+        "isActive": true
+      },
+      "modifiedDate": "Nov 29, 2017 8:54:45 PM"
+    },
+    {
+      "id": 26752,
+      "status": {
+        "id": 5,
+        "name": "No Access",
+        "isActive": true
+      },
+      "enclosure": {
+        "id": 17,
+        "name": "Delivery",
+        "isActive": true
+      },
+      "modifiedDate": "Dec 4, 2017 7:01:08 PM"
+    },
+    {
+      "id": 26751,
+      "status": {
+        "id": 5,
+        "name": "No Access",
+        "isActive": true
+      },
+      "enclosure": {
+        "id": 18,
+        "name": "Muon Extraction",
+        "isActive": true
+      },
+      "modifiedDate": "Dec 4, 2017 7:01:05 PM"
+    },
+    {
+      "id": 26954,
+      "status": {
+        "id": 5,
+        "name": "No Access",
+        "isActive": true
+      },
+      "enclosure": {
+        "id": 19,
+        "name": "Muon MC1",
+        "isActive": true
+      },
+      "modifiedDate": "Dec 14, 2017 4:03:23 PM"
+    },
+    {
+      "id": 26792,
+      "status": {
+        "id": 5,
+        "name": "No Access",
+        "isActive": true
+      },
+      "enclosure": {
+        "id": 20,
+        "name": "T-Hall",
+        "isActive": true
+      },
+      "modifiedDate": "Dec 6, 2017 11:15:44 AM"
+    },
+    {
+      "id": 26905,
+      "status": {
+        "id": 5,
+        "name": "No Access",
+        "isActive": true
+      },
+      "enclosure": {
+        "id": 21,
+        "name": "Enc B",
+        "isActive": true
+      },
+      "modifiedDate": "Dec 13, 2017 3:00:34 PM"
+    },
+    {
+      "id": 26906,
+      "status": {
+        "id": 5,
+        "name": "No Access",
+        "isActive": true
+      },
+      "enclosure": {
+        "id": 22,
+        "name": "Enc CDE",
+        "isActive": true
+      },
+      "modifiedDate": "Dec 13, 2017 3:01:04 PM"
+    },
+    {
+      "id": 26908,
+      "status": {
+        "id": 5,
+        "name": "No Access",
+        "isActive": true
+      },
+      "enclosure": {
+        "id": 23,
+        "name": "F1",
+        "isActive": true
+      },
+      "modifiedDate": "Dec 13, 2017 4:17:20 PM"
+    },
+    {
+      "id": 26909,
+      "status": {
+        "id": 5,
+        "name": "No Access",
+        "isActive": true
+      },
+      "enclosure": {
+        "id": 24,
+        "name": "F2 F3",
+        "isActive": true
+      },
+      "modifiedDate": "Dec 13, 2017 4:17:20 PM"
+    },
+    {
+      "id": 26910,
+      "status": {
+        "id": 5,
+        "name": "No Access",
+        "isActive": true
+      },
+      "enclosure": {
+        "id": 25,
+        "name": "M01",
+        "isActive": true
+      },
+      "modifiedDate": "Dec 13, 2017 4:17:20 PM"
+    },
+    {
+      "id": 26912,
+      "status": {
+        "id": 5,
+        "name": "No Access",
+        "isActive": true
+      },
+      "enclosure": {
+        "id": 26,
+        "name": "M02",
+        "isActive": true
+      },
+      "modifiedDate": "Dec 13, 2017 4:18:20 PM"
+    },
+    {
+      "id": 26913,
+      "status": {
+        "id": 5,
+        "name": "No Access",
+        "isActive": true
+      },
+      "enclosure": {
+        "id": 27,
+        "name": "M03",
+        "isActive": true
+      },
+      "modifiedDate": "Dec 13, 2017 4:18:20 PM"
+    },
+    {
+      "id": 26914,
+      "status": {
+        "id": 5,
+        "name": "No Access",
+        "isActive": true
+      },
+      "enclosure": {
+        "id": 28,
+        "name": "M04",
+        "isActive": true
+      },
+      "modifiedDate": "Dec 13, 2017 4:18:20 PM"
+    },
+    {
+      "id": 26915,
+      "status": {
+        "id": 5,
+        "name": "No Access",
+        "isActive": true
+      },
+      "enclosure": {
+        "id": 29,
+        "name": "M05",
+        "isActive": true
+      },
+      "modifiedDate": "Dec 13, 2017 4:18:20 PM"
+    },
+    {
+      "id": 26961,
+      "status": {
+        "id": 5,
+        "name": "No Access",
+        "isActive": true
+      },
+      "enclosure": {
+        "id": 30,
+        "name": "MT6-1",
+        "isActive": true
+      },
+      "modifiedDate": "Dec 14, 2017 4:52:52 PM"
+    },
+    {
+      "id": 26962,
+      "status": {
+        "id": 5,
+        "name": "No Access",
+        "isActive": true
+      },
+      "enclosure": {
+        "id": 31,
+        "name": "MT6-2",
+        "isActive": true
+      },
+      "modifiedDate": "Dec 14, 2017 4:52:52 PM"
+    },
+    {
+      "id": 26911,
+      "status": {
+        "id": 5,
+        "name": "No Access",
+        "isActive": true
+      },
+      "enclosure": {
+        "id": 32,
+        "name": "MC6",
+        "isActive": true
+      },
+      "modifiedDate": "Dec 13, 2017 4:17:20 PM"
+    },
+    {
+      "id": 26952,
+      "status": {
+        "id": 5,
+        "name": "No Access",
+        "isActive": true
+      },
+      "enclosure": {
+        "id": 33,
+        "name": "MC7",
+        "isActive": true
+      },
+      "modifiedDate": "Dec 14, 2017 2:13:45 PM"
+    },
+    {
+      "id": 26953,
+      "status": {
+        "id": 5,
+        "name": "No Access",
+        "isActive": true
+      },
+      "enclosure": {
+        "id": 34,
+        "name": "MB7",
+        "isActive": true
+      },
+      "modifiedDate": "Dec 14, 2017 2:13:45 PM"
+    },
+    {
+      "id": 26635,
+      "status": {
+        "id": 3,
+        "name": "Controlled",
+        "isActive": true
+      },
+      "enclosure": {
+        "id": 35,
+        "name": "G2",
+        "isActive": true
+      },
+      "modifiedDate": "Nov 25, 2017 7:52:11 PM"
+    },
+    {
+      "id": 26142,
+      "status": {
+        "id": 4,
+        "name": "Supervised",
+        "isActive": true
+      },
+      "enclosure": {
+        "id": 36,
+        "name": "N01",
+        "isActive": true
+      },
+      "modifiedDate": "Jul 9, 2017 6:02:17 PM"
+    },
+    {
+      "id": 26940,
+      "status": {
+        "id": 4,
+        "name": "Supervised",
+        "isActive": true
+      },
+      "enclosure": {
+        "id": 37,
+        "name": "NM2",
+        "isActive": true
+      },
+      "modifiedDate": "Dec 14, 2017 11:01:29 AM"
+    },
+    {
+      "id": 26144,
+      "status": {
+        "id": 4,
+        "name": "Supervised",
+        "isActive": true
+      },
+      "enclosure": {
+        "id": 38,
+        "name": "NM3",
+        "isActive": true
+      },
+      "modifiedDate": "Jul 9, 2017 6:02:40 PM"
+    },
+    {
+      "id": 26937,
+      "status": {
+        "id": 2,
+        "name": "Open",
+        "isActive": true
+      },
+      "enclosure": {
+        "id": 39,
+        "name": "NM4",
+        "isActive": true
+      },
+      "modifiedDate": "Dec 14, 2017 11:00:04 AM"
+    },
+    {
+      "id": 26608,
+      "status": {
+        "id": 5,
+        "name": "No Access",
+        "isActive": true
+      },
+      "enclosure": {
+        "id": 40,
+        "name": "NML",
+        "isActive": true
+      },
+      "modifiedDate": "Nov 19, 2017 5:20:35 PM"
+    }
+  ],
+  "getAllEnclosures": [
+    {
+      "id": 3,
+      "name": "Booster",
+      "isActive": true,
+      "modifiedDate": "Apr 11, 2017 10:58:28 AM"
+    },
+    {
+      "id": 17,
+      "name": "Delivery",
+      "isActive": true,
+      "modifiedDate": "Apr 11, 2017 10:58:28 AM"
+    },
+    {
+      "id": 21,
+      "name": "Enc B",
+      "isActive": true,
+      "modifiedDate": "Apr 11, 2017 10:58:28 AM"
+    },
+    {
+      "id": 22,
+      "name": "Enc CDE",
+      "isActive": true,
+      "modifiedDate": "Apr 11, 2017 10:58:28 AM"
+    },
+    {
+      "id": 12,
+      "name": "F-Sector",
+      "isActive": true,
+      "modifiedDate": "Apr 11, 2017 10:58:28 AM"
+    },
+    {
+      "id": 23,
+      "name": "F1",
+      "isActive": true,
+      "modifiedDate": "Apr 11, 2017 10:58:28 AM"
+    },
+    {
+      "id": 24,
+      "name": "F2 F3",
+      "isActive": true,
+      "modifiedDate": "Apr 11, 2017 10:58:28 AM"
+    },
+    {
+      "id": 35,
+      "name": "G2",
+      "isActive": true,
+      "modifiedDate": "Apr 11, 2017 10:58:28 AM"
+    },
+    {
+      "id": 1,
+      "name": "Linac",
+      "isActive": true,
+      "modifiedDate": "Apr 11, 2017 10:58:28 AM"
+    },
+    {
+      "id": 25,
+      "name": "M01",
+      "isActive": true,
+      "modifiedDate": "Apr 11, 2017 10:58:28 AM"
+    },
+    {
+      "id": 26,
+      "name": "M02",
+      "isActive": true,
+      "modifiedDate": "Apr 11, 2017 10:58:28 AM"
+    },
+    {
+      "id": 27,
+      "name": "M03",
+      "isActive": true,
+      "modifiedDate": "Apr 11, 2017 10:58:28 AM"
+    },
+    {
+      "id": 28,
+      "name": "M04",
+      "isActive": true,
+      "modifiedDate": "Apr 11, 2017 10:58:28 AM"
+    },
+    {
+      "id": 29,
+      "name": "M05",
+      "isActive": true,
+      "modifiedDate": "Apr 11, 2017 10:58:28 AM"
+    },
+    {
+      "id": 34,
+      "name": "MB7",
+      "isActive": true,
+      "modifiedDate": "Apr 11, 2017 10:58:28 AM"
+    },
+    {
+      "id": 32,
+      "name": "MC6",
+      "isActive": true,
+      "modifiedDate": "Apr 11, 2017 10:58:28 AM"
+    },
+    {
+      "id": 33,
+      "name": "MC7",
+      "isActive": true,
+      "modifiedDate": "Apr 11, 2017 10:58:28 AM"
+    },
+    {
+      "id": 7,
+      "name": "MI10",
+      "isActive": true,
+      "modifiedDate": "Apr 11, 2017 10:58:28 AM"
+    },
+    {
+      "id": 5,
+      "name": "MI12A",
+      "isActive": true,
+      "modifiedDate": "Apr 11, 2017 10:58:28 AM"
+    },
+    {
+      "id": 6,
+      "name": "MI12B",
+      "isActive": true,
+      "modifiedDate": "Apr 11, 2017 10:58:28 AM"
+    },
+    {
+      "id": 8,
+      "name": "MI20-MI62",
+      "isActive": true,
+      "modifiedDate": "Apr 11, 2017 10:58:28 AM"
+    },
+    {
+      "id": 9,
+      "name": "MI65",
+      "isActive": true,
+      "modifiedDate": "Apr 11, 2017 10:58:28 AM"
+    },
+    {
+      "id": 4,
+      "name": "MI8",
+      "isActive": true,
+      "modifiedDate": "Apr 11, 2017 10:58:28 AM"
+    },
+    {
+      "id": 11,
+      "name": "MINOS Absorber",
+      "isActive": true,
+      "modifiedDate": "Apr 11, 2017 10:58:28 AM"
+    },
+    {
+      "id": 10,
+      "name": "MINOS Alcoves",
+      "isActive": true,
+      "modifiedDate": "Apr 11, 2017 10:58:28 AM"
+    },
+    {
+      "id": 30,
+      "name": "MT6-1",
+      "isActive": true,
+      "modifiedDate": "Apr 11, 2017 10:58:28 AM"
+    },
+    {
+      "id": 31,
+      "name": "MT6-2",
+      "isActive": true,
+      "modifiedDate": "Apr 11, 2017 10:58:28 AM"
+    },
+    {
+      "id": 2,
+      "name": "MTA",
+      "isActive": true,
+      "modifiedDate": "Apr 11, 2017 10:58:28 AM"
+    },
+    {
+      "id": 18,
+      "name": "Muon Extraction",
+      "isActive": true,
+      "modifiedDate": "Apr 11, 2017 10:58:28 AM"
+    },
+    {
+      "id": 19,
+      "name": "Muon MC1",
+      "isActive": true,
+      "modifiedDate": "Apr 11, 2017 10:58:28 AM"
+    },
+    {
+      "id": 36,
+      "name": "N01",
+      "isActive": true,
+      "modifiedDate": "Apr 11, 2017 10:58:28 AM"
+    },
+    {
+      "id": 37,
+      "name": "NM2",
+      "isActive": true,
+      "modifiedDate": "Apr 11, 2017 10:58:28 AM"
+    },
+    {
+      "id": 38,
+      "name": "NM3",
+      "isActive": true,
+      "modifiedDate": "Apr 11, 2017 10:58:28 AM"
+    },
+    {
+      "id": 39,
+      "name": "NM4",
+      "isActive": true,
+      "modifiedDate": "Apr 11, 2017 10:58:28 AM"
+    },
+    {
+      "id": 40,
+      "name": "NML",
+      "isActive": true,
+      "modifiedDate": "Apr 11, 2017 10:58:28 AM"
+    },
+    {
+      "id": 13,
+      "name": "Pre-Target",
+      "isActive": true,
+      "modifiedDate": "Apr 11, 2017 10:58:28 AM"
+    },
+    {
+      "id": 14,
+      "name": "Pre-Vault",
+      "isActive": true,
+      "modifiedDate": "Apr 11, 2017 10:58:28 AM"
+    },
+    {
+      "id": 20,
+      "name": "T-Hall",
+      "isActive": true,
+      "modifiedDate": "Apr 11, 2017 10:58:28 AM"
+    },
+    {
+      "id": 16,
+      "name": "Transport Mid",
+      "isActive": true,
+      "modifiedDate": "Apr 11, 2017 10:58:28 AM"
+    },
+    {
+      "id": 15,
+      "name": "Transport US/DS",
+      "isActive": true,
+      "modifiedDate": "Apr 11, 2017 10:58:28 AM"
+    }
+  ],
+  "getAllStatuses": [
+    {
+      "id": 3,
+      "name": "Controlled",
+      "isActive": true,
+      "modifiedDate": "Apr 11, 2017 10:58:27 AM"
+    },
+    {
+      "id": 5,
+      "name": "No Access",
+      "isActive": true,
+      "modifiedDate": "Apr 11, 2017 10:58:27 AM"
+    },
+    {
+      "id": 2,
+      "name": "Open",
+      "isActive": true,
+      "modifiedDate": "Apr 11, 2017 10:58:27 AM"
+    },
+    {
+      "id": 6,
+      "name": "Preparing",
+      "isActive": true,
+      "modifiedDate": "Apr 11, 2017 10:58:27 AM"
+    },
+    {
+      "id": 7,
+      "name": "Restricted",
+      "isActive": true,
+      "modifiedDate": "Apr 11, 2017 10:58:27 AM"
+    },
+    {
+      "id": 4,
+      "name": "Supervised",
+      "isActive": true,
+      "modifiedDate": "Apr 11, 2017 10:58:27 AM"
+    },
+    {
+      "id": 1,
+      "name": "Undefined",
+      "isActive": true,
+      "modifiedDate": "Apr 11, 2017 10:58:27 AM"
+    }
+  ]
+}
