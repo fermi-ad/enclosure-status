@@ -1,7 +1,6 @@
-/**
- * @fileoverview Display current status of Fermi Enclosures from OAC
- * @author beau@fnal.gov (Beau Harrison)
- */
+const container = document.querySelector('main')
+const docBody = document.body
+let enclosureStates = []
 
 function colorCode(statName) {
   switch (statName) {
@@ -44,7 +43,7 @@ function nameFilter(name) {
   return newName
 }
 
-function getTimeFromDate(dateString) {
+function getTimeFromDate(dateString = new Date()) {
   const d = new Date(dateString)
   return d.toString().split(' ')[4]
 }
@@ -57,13 +56,13 @@ function appendAppStatus(inputArray, time) {
     },
     'enclosure': {
       'name': 'App Status:'
-    },
+    }
   })
   return resultArray
 }
 
 function display(inputArray) {
-  const container = document.querySelector('main')
+  container.innerHTML = ''
 
   for (let object of inputArray) {
     const row = document.createElement('div')
@@ -91,49 +90,66 @@ function display(inputArray) {
 }
 
 function successState(time) {
-  document.body.style.background = 'black'
-  document.querySelector('#appStatus').className = 'super'
-  document.querySelector('#appStatus').textContent = time
+  const appStatus = document.querySelector('#appStatus')
+  docBody.style.background = 'black'
+  appStatus.className = 'super'
+  appStatus.textContent = time
 }
 
-function build(response) {
-  return (json) => {
-    const lastDate = getTimeFromDate(response.headers.get('date'))
-    document.querySelector('main').innerHTML = ''
-    display(appendAppStatus(json, lastDate))
+function handleNewData(dataType) {
+  return (reading) => {
+    const lastDate = getTimeFromDate()
+
+    if (reading.data.length === enclosureStates.length - 1) { // Minus 1 accounts for app status cell
+      reading.data.forEach((enclosureState, enclosureIndex) => {
+        if (dataType === 'names') {
+          enclosureStates[enclosureIndex].enclosure.name = enclosureState
+        } else if (dataType === 'statuses') {
+          enclosureStates[enclosureIndex].status.name = enclosureState
+        }
+      })
+
+      enclosureStates[enclosureStates.length - 1].status.name = lastDate
+    } else {
+      enclosureStates = []
+
+      reading.data.forEach(enclosureState => enclosureStates.push({
+        'status': {
+          'name': dataType === 'statuses' ? enclosureState : ''
+        },
+        'enclosure': {
+          'name': dataType === 'names' ? enclosureState : ''
+        }
+      }))
+
+      enclosureStates.push({
+        'status': {
+          'name': lastDate
+        },
+        'enclosure': {
+          'name': 'App Status:'
+        }
+      })
+    }
+
+    display(enclosureStates)
     successState(lastDate)
   }
 }
 
 function errorState(error) {
-  document.body.style.background = 'red'
-  document.querySelector('#appStatus').className = 'noacs'
-  document.querySelector('#appStatus').textContent = 'No response'
+  const appStatus = document.querySelector('#appStatus')
+  docBody.style.background = 'red'
+  appStatus.className = 'noacs'
+  appStatus.textContent = 'No response'
   console.error(`ERROR: ${error}`)
 }
 
-function getEnclosureStatus() {
-  if (!self.fetch) {
-    alert('This browser does not support fetch.')
-    return
-  }
+const dpm = new DPM()
 
-  // const uri = 'https://localhost:3000/getCurrentEntries'
-  const uri = 'https://www-bd.fnal.gov/EnclosureStatus/getCurrentEntries'
-  fetch(`${uri}?${new Date().getTime()}`) // Date argument for cache busting
-    .then((response) => {
-      if (!response.ok) {
-        errorState('Response not OK')
-        return
-      } else {
-        response.json().then(build(response))
-      }
-    })
-    .catch((error) => errorState(error))
-}
+dpm.addRequest('Z:ENCNAMES[]@I', handleNewData('names'), errorState)
+dpm.addRequest('Z:ENCSTAT[]@I', handleNewData('statuses'), errorState)
+dpm.addRequest('Z:ENCNAMES[]@Q', handleNewData('names'), errorState)
+dpm.addRequest('Z:ENCSTAT[]@Q', handleNewData('statuses'), errorState)
 
-// Self executing function as initializer
-(function () {
-  getEnclosureStatus()
-  setInterval('getEnclosureStatus()', 10000)
-})()
+dpm.start()
