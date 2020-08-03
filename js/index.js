@@ -1,3 +1,5 @@
+/* global DPM */
+
 const container = document.querySelector('main')
 const docBody = document.body
 let enclosureStates = []
@@ -46,19 +48,6 @@ function nameFilter(name) {
 function getTimeFromDate(dateString = new Date()) {
   const d = new Date(dateString)
   return d.toString().split(' ')[4]
-}
-
-function appendAppStatus(inputArray, time) {
-  const resultArray = inputArray
-  resultArray.push({
-    'status': {
-      'name': time
-    },
-    'enclosure': {
-      'name': 'App Status:'
-    }
-  })
-  return resultArray
 }
 
 function display(inputArray) {
@@ -142,7 +131,7 @@ function errorState(error) {
   docBody.style.background = 'red'
   appStatus.className = 'noacs'
   appStatus.textContent = 'No response'
-  console.error(`ERROR: ${error}`)
+  console.error(`ERROR: ${error}`) // eslint-disable-line
 }
 
 const dpm = new DPM()
