@@ -1,3 +1,3 @@
 #!/usr/bin/env bash
-rsync -avz --exclude ".git" --exclude ".gitignore" --exclude ".eslintrc.json"  --exclude "package.json"  --exclude "package-lock.json" --exclude-from ".gitignore" $(pwd) chablis:/usr/local/www/data/ops/beau/
+rsync -avz --exclude ".git" --exclude ".gitignore" --exclude ".eslintrc.json"  --exclude "package.json"  --exclude "package-lock.json" --exclude-from ".gitignore" $(pwd) chablis:/usr/local/www/data/ops/
 
