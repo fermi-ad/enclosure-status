@@ -1,21 +1,24 @@
 {
-  "name": "encstat",
-  "version": "2.0.0",
+  "name": "enclosure-status",
+  "version": "3.0.0",
   "description": "Status display for Fermilab Accelerator Division enclosures.",
-  "main": "index.js",
+  "main": "js/index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "lint": "eslint --ignore-path .gitignore ."
+  },
+  "directories": {
+    "doc": "docs"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/beauremus/enclosure-status.git"
+    "url": "git+https://github.com/fermi-controls/enclosure-status.git"
   },
   "author": "Beau Harrison <beau@fnal.gov>",
   "license": "UNLICENSED",
   "bugs": {
-    "url": "https://github.com/beauremus/enclosure-status/issues"
+    "url": "https://github.com/fermi-controls/enclosure-status/issues"
   },
-  "homepage": "https://github.com/beauremus/enclosure-status#readme",
+  "homepage": "https://github.com/fermi-controls/enclosure-status#readme",
   "devDependencies": {
     "eslint": "^4.19.1",
     "eslint-config-standard": "^11.0.0-beta.0",
