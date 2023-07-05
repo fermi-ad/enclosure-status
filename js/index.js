@@ -136,9 +136,9 @@ function errorState(error) {
 
 const dpm = new DPM()
 
-dpm.addRequest('Z:ENCNAMES[]@I', handleNewData('names'), errorState)
-dpm.addRequest('Z:ENCSTAT[]@I', handleNewData('statuses'), errorState)
-dpm.addRequest('Z:ENCNAMES[]@Q', handleNewData('names'), errorState)
-dpm.addRequest('Z:ENCSTAT[]@Q', handleNewData('statuses'), errorState)
+dpm.addRequest('G_ENCNAMES[]@I', handleNewData('names'), errorState)
+dpm.addRequest('G_ENCSTAT[]@I', handleNewData('statuses'), errorState)
+dpm.addRequest('G_EENCNAMES[]@Q', handleNewData('names'), errorState)
+dpm.addRequest('G_ENCSTAT[]@Q', handleNewData('statuses'), errorState)
 
 dpm.start()
