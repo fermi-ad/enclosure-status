@@ -12,6 +12,10 @@ function colorCode(statName) {
     return 'cntrl'
   case 'Supervised':
     return 'super'
+  case 'Preparing':
+    return 'prep'
+  case 'Restricted':
+    return 'resct'
   case 'Open':
     return 'open'
   case 'No Access':

@@ -72,6 +72,14 @@ center {
   color: rgb(0, 255, 255);
 }
 
+.prep {
+  color: rgb(0, 0, 255);
+}
+
+.resct {
+  color: rgb(255, 0, 255);
+}
+
 .super {
   color: rgb(0, 255, 0);
 }
