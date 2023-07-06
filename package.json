@@ -1,6 +1,6 @@
 {
   "name": "enclosure-status",
-  "version": "3.0.0",
+  "version": "4.0.0",
   "description": "Status display for Fermilab Accelerator Division enclosures.",
   "main": "js/index.js",
   "scripts": {
