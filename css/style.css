@@ -35,14 +35,14 @@ center {
 }
 
 #statusContainer {
-  grid-row: -1;
+  grid-row: -2;
   background-color: var(--bg-color);
 }
 
-/* #timeContainer {
+#timeContainer {
   grid-row: -1;
   background-color: var(--bg-color);
-} */
+}
 
 .row {
   display: grid;
@@ -77,7 +77,7 @@ center {
 }
 
 .prep {
-  color: rgb(0, 0, 255);
+  color: rgb(133, 184, 255);
 }
 
 .resct {

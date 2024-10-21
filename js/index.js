@@ -117,18 +117,12 @@ function successState(time) {
   appStatus.textContent = time;
 }
 
-// function currentTime(time) {
-//   const timeContainer = document.querySelector("#timeID");
-//   timeContainer.textContent = time;
-// }
-
 function handleNewData(dataType) {
   return (reading) => {
     const lastDate = getTimeFromDate();
-    const timeNow = getTimeFromDate();
 
-    if (reading.data.length === enclosureStates.length - 1) {
-      // Minus 1 accounts for app status cell
+    if (reading.data.length === enclosureStates.length - 2) {
+      // Minus 2 accounts for app status cell and time cell
       reading.data.forEach((enclosureState, enclosureIndex) => {
         if (dataType === "names") {
           enclosureStates[enclosureIndex].enclosure.name = enclosureState;
@@ -137,7 +131,7 @@ function handleNewData(dataType) {
         }
       });
 
-      enclosureStates[enclosureStates.length - 1].status.name = lastDate;
+      enclosureStates[enclosureStates.length - 2].status.name = lastDate;
     } else {
       enclosureStates = [];
 
@@ -160,21 +154,21 @@ function handleNewData(dataType) {
           enclosure: {
             name: "App Status:",
           },
+        },
+        {
+          status: {
+            name: "",
+          },
+          enclosure: {
+            name: "Time:",
+          },
         }
-        // {
-        //   status: {
-        //     name: "currentTime",
-        //   },
-        //   enclosure: {
-        //     name: "Time:",
-        //   },
-        // }
       );
     }
 
     display(enclosureStates);
     successState(lastDate);
-    // currentTime(timeNow);
+    currentTime();
   };
 }
 
@@ -194,3 +188,9 @@ dpm.addRequest("G_EENCNAMES[]@Q", handleNewData("names"), errorState);
 dpm.addRequest("G_ENCSTAT[]@Q", handleNewData("statuses"), errorState);
 
 dpm.start();
+
+function currentTime() {
+  const timeContainer = document.querySelector("#timeID");
+  timeContainer.textContent = getTimeFromDate();
+}
+setInterval(currentTime, 1000);
