@@ -1,8 +1,7 @@
 @font-face {
   font-family: Vegur;
-  src: url('../fonts/Vegur-Regular.otf');
+  src: url("../fonts/Vegur-Regular.otf");
 }
-
 
 /* Variables */
 
@@ -36,6 +35,11 @@ center {
 }
 
 #statusContainer {
+  grid-row: -2;
+  background-color: var(--bg-color);
+}
+
+#timeContainer {
   grid-row: -1;
   background-color: var(--bg-color);
 }
@@ -73,7 +77,7 @@ center {
 }
 
 .prep {
-  color: rgb(0, 0, 255);
+  color: rgb(133, 184, 255);
 }
 
 .resct {
@@ -97,14 +101,14 @@ header * {
 }
 
 .simple {
-  font-size: .8em;
+  font-size: 0.8em;
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: none;
   grid-auto-flow: row;
 }
 
-.simple>#statusContainer {
+.simple > #statusContainer {
   grid-row: auto;
 }
 
@@ -114,21 +118,21 @@ header * {
   grid-template-columns: 1fr;
   grid-template-rows: none;
   grid-auto-flow: row;
-  grid-gap: .3em;
+  grid-gap: 0.3em;
 }
 
-.updater>#statusContainer {
+.updater > #statusContainer {
   grid-row: auto;
 }
 
-.updater>.row>select {
+.updater > .row > select {
   justify-self: start;
 }
 
-.updater>.row:nth-child(odd) {
+.updater > .row:nth-child(odd) {
   background-color: var(--bg-color);
 }
 
-.updater>.row:nth-child(even) {
+.updater > .row:nth-child(even) {
   background-color: var(--bg-color);
 }
