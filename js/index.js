@@ -119,6 +119,7 @@ function successState(time) {
 
 function handleNewData(dataType) {
   return (reading) => {
+    console.log(`${dataType}: ${JSON.stringify(reading)}`);
     const lastDate = getTimeFromDate();
 
     if (reading.data.length === enclosureStates.length - 2) {
@@ -177,14 +178,14 @@ function errorState(error) {
   docBody.style.background = "red";
   appStatus.className = "noacs";
   appStatus.textContent = "No response";
-  console.error(`ERROR: ${error}`); // eslint-disable-line
+  console.error("Error: ", error);
 }
 
 const dpm = new DPM();
 
 dpm.addRequest("G_ENCNAMES[]@I", handleNewData("names"), errorState);
 dpm.addRequest("G_ENCSTAT[]@I", handleNewData("statuses"), errorState);
-dpm.addRequest("G_EENCNAMES[]@Q", handleNewData("names"), errorState);
+// dpm.addRequest("G_EENCNAMES[]@Q", handleNewData("names"), errorState); // Doesn't seem to work
 dpm.addRequest("G_ENCSTAT[]@Q", handleNewData("statuses"), errorState);
 
 dpm.start();
