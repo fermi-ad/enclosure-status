@@ -185,7 +185,7 @@ const dpm = new DPM();
 
 dpm.addRequest("G_ENCNAMES[]@I", handleNewData("names"), errorState);
 dpm.addRequest("G_ENCSTAT[]@I", handleNewData("statuses"), errorState);
-// dpm.addRequest("G_EENCNAMES[]@Q", handleNewData("names"), errorState); // Doesn't seem to work
+dpm.addRequest("G_ENCNAMES[]@Q", handleNewData("names"), errorState);
 dpm.addRequest("G_ENCSTAT[]@Q", handleNewData("statuses"), errorState);
 
 dpm.start();
