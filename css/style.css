@@ -92,6 +92,10 @@ center {
   color: rgb(255, 255, 0);
 }
 
+.shutdown {
+  color: rgb(0, 98, 255);
+}
+
 header {
   text-align: center;
 }

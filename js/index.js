@@ -20,6 +20,8 @@ function colorCode(statName) {
       return "open";
     case "No_Access":
       return "noacs";
+    case "Shutdown":
+      return "shutdown";
   }
 }
 
@@ -144,7 +146,7 @@ function handleNewData(dataType) {
           enclosure: {
             name: dataType === "names" ? enclosureState : "",
           },
-        })
+        }),
       );
 
       enclosureStates.push(
@@ -163,7 +165,7 @@ function handleNewData(dataType) {
           enclosure: {
             name: "Time:",
           },
-        }
+        },
       );
     }
 
