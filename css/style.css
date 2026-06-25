@@ -94,6 +94,8 @@ center {
 
 .shutdown {
   color: rgb(0, 98, 255);
+  font-size: 2.2vw;
+  align-content: center;
 }
 
 header {

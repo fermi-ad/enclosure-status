@@ -61,8 +61,8 @@ function nameFilter(name) {
 
 function statusFilter(name) {
   let newStatus = name;
-  const REPLACEMENTS = ["No Access"];
-  const TO_REPLACE = ["No_Access"];
+  const REPLACEMENTS = ["No Access", "Shutdown Cores"];
+  const TO_REPLACE = ["No_Access", "Shutdown"];
 
   const index = TO_REPLACE.indexOf(name);
 
